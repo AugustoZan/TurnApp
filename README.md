@@ -1,4 +1,4 @@
-<img width="1366" height="603" alt="image" src="https://github.com/user-attachments/assets/fc0bf9d8-b75e-4db6-98a3-5e9b58df1c92" /># TurnApp 📅
+TurnApp 📅
 
 A fullstack appointment booking web application with bilingual support (Spanish/English).
 

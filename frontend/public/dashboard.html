@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TurnApp - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">TurnApp</h1>
+      <div class="nav-right">
+        <span id="user-name"></span>
+        <button id="logout-btn" class="btn-primary">Cerrar Sesión</button>
+        <button id="lang-btn" class="lang-btn">
+          <img id="lang-flag" src="https://flagcdn.com/w40/gb.png" alt="Switch to English">
+        </button>
+      </div>
+    </nav>
+  </header>
+
+ <main class="dashboard-container">
+  <div class="dashboard-header">
+    <h2 id="slots-title">Turnos Disponibles</h2>
+    <p id="dashboard-message" class="message"></p>
+  </div>
+
+  <div id="calendar"></div>
+
+  <h2 id="appointments-title" style="margin-top: 40px; color: #1E5FA3;">Mis Turnos</h2>
+  <table class="admin-table">
+    <thead>
+      <tr>
+        <th id="th-date">Fecha</th>
+        <th id="th-time">Hora</th>
+        <th id="th-status">Estado</th>
+        <th id="th-actions">Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="appointments-tbody"></tbody>
+  </table>
+</main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

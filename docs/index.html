@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TurnApp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">TurnApp</h1>
+      <button id="lang-btn" class="lang-btn">
+        <img id="lang-flag" src="https://flagcdn.com/w40/gb.png" alt="Switch to English">
+      </button>
+    </nav>
+  </header>
+
+  <main class="auth-container">
+    <!-- Login -->
+    <div id="login-form" class="form-box">
+      <h2 id="login-title">Iniciar Sesión</h2>
+      <input type="email" id="login-email" placeholder="Correo electrónico">
+      <input type="password" id="login-password" placeholder="Contraseña">
+      <button id="login-btn" class="btn-primary">Entrar</button>
+      <p id="login-switch">¿No tenés cuenta? <a href="#" id="go-register">Registrate</a></p>
+    </div>
+
+    <!-- Registro -->
+    <div id="register-form" class="form-box hidden">
+      <h2 id="register-title">Crear Cuenta</h2>
+      <input type="text" id="register-name" placeholder="Nombre completo">
+      <input type="email" id="register-email" placeholder="Correo electrónico">
+      <input type="password" id="register-password" placeholder="Contraseña">
+      <button id="register-btn" class="btn-primary">Registrarse</button>
+      <p id="register-switch">¿Ya tenés cuenta? <a href="#" id="go-login">Iniciá sesión</a></p>
+    </div>
+
+    <p id="auth-message" class="message"></p>
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const API = 'http://localhost:3006/api';
+const API = 'https://turnapp-production.up.railway.app/api';
 
 // ===== UTILIDADES =====
 function getToken() {
@@ -313,3 +313,4 @@ if (document.getElementById('admin-tbody')) {
 
   loadAllAppointments();
 }
+
